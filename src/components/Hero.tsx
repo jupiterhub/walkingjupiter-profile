@@ -1,0 +1,62 @@
+"use client";
+
+import { motion } from "framer-motion";
+import styles from "./Hero.module.css";
+import { ArrowRight } from "lucide-react";
+
+export default function Hero() {
+    return (
+        <section className={`container ${styles.hero}`}>
+            <div className={styles.content}>
+                <motion.p
+                    className={styles.greeting}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Hello, I&apos;m
+                </motion.p>
+                <motion.h1
+                    className={styles.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    style={{ fontSize: '4rem', fontWeight: 800, marginBottom: '0.5rem' }}
+                >
+                    Jupiter Tecson.
+                </motion.h1>
+                <motion.h2
+                    className={styles.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1.5rem' }}
+                >
+                    Staff Software Engineer.
+                </motion.h2>
+                <motion.p
+                    className={styles.description}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                    Specializing in DevOps, Backend/Frontend, Cloud, and Distributed Systems.
+                    I build scalable, high-performance applications that solve real-world problems.
+                </motion.p>
+                <motion.div
+                    className={styles.ctaGroup}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                    <a href="#contact" className="btn btn-primary">
+                        Get in Touch <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+                    </a>
+                    <a href="#projects" className="btn btn-outline">
+                        View Work
+                    </a>
+                </motion.div>
+            </div>
+        </section>
+    );
+}

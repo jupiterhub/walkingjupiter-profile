@@ -1,0 +1,74 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    z-index: 1;
+    max-width: 800px;
+}
+
+.greeting {
+    font-size: 1.25rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #ccc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #aaa;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ctaGroup a {
+        width: 100%;
+        text-align: center;
+    }
+}

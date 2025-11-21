@@ -1,0 +1,67 @@
+.recommendations {
+    padding: 6rem 0;
+    background: linear-gradient(to top, var(--background), rgba(11, 11, 21, 0.8));
+}
+
+.quoteCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quoteIcon {
+    position: absolute;
+    top: -1.5rem;
+    left: 3rem;
+    background: var(--background);
+    padding: 0 1rem;
+}
+
+.quoteText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--foreground);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorName {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.authorTitle {
+    font-size: 0.9rem;
+    color: var(--accent);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .quoteCard {
+        padding: 2rem;
+    }
+
+    .quoteIcon {
+        left: 1.5rem;
+    }
+
+    .quoteText {
+        font-size: 1rem;
+    }
+}
