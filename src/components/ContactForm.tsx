@@ -45,7 +45,7 @@ export default function ContactForm() {
             >
                 <h2 className="section-title" style={{ textAlign: 'center', display: 'block' }}>Get In Touch</h2>
                 <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--foreground-muted)' }}>
-                    Or email me directly at <a href="mailto:contact@jupi.anonaddy.com" style={{ color: 'var(--primary)' }}>profile@walkingjupiter.com</a>
+                    Or email me directly at <a href="mailto:profile@walkingjupiter.co" style={{ color: 'var(--primary)' }}>profile@walkingjupiter.com</a>
                 </p>
                 <form onSubmit={handleSubmit}>
                     <div className={styles.formGroup}>
