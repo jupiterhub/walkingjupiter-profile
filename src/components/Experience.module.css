@@ -49,9 +49,12 @@
     box-shadow: 0 0 15px var(--primary-color);
 }
 
+.item {
+    cursor: pointer;
+}
+
 .header {
     margin-bottom: 1.5rem;
-    cursor: pointer;
     /* Indicate interactivity */
     transition: transform 0.2s ease;
 }

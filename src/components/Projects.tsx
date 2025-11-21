@@ -98,7 +98,10 @@ export default function Projects() {
 
                 <div className={styles.grid}>
                     {featuredProjects.map((project, index) => (
-                        <motion.div
+                        <motion.a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={index}
                             className={styles.card}
                             initial={{ opacity: 0, y: 20 }}
@@ -109,9 +112,9 @@ export default function Projects() {
                             <div className={styles.cardHeader}>
                                 <Folder className={styles.folderIcon} size={40} />
                                 <div className={styles.links}>
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                    <div className={styles.link}>
                                         {project.isExternal ? <ExternalLink size={20} /> : <Github size={20} />}
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <h3 className={styles.title}>{project.title}</h3>
@@ -121,7 +124,7 @@ export default function Projects() {
                                     <span key={i}>{t}</span>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
 
@@ -137,7 +140,10 @@ export default function Projects() {
 
                 <div className={styles.grid}>
                     {openSourceProjects.map((project, index) => (
-                        <motion.div
+                        <motion.a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={index}
                             className={styles.card}
                             initial={{ opacity: 0, y: 20 }}
@@ -148,9 +154,9 @@ export default function Projects() {
                             <div className={styles.cardHeader}>
                                 <Folder className={styles.folderIcon} size={40} />
                                 <div className={styles.links}>
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                    <div className={styles.link}>
                                         <Github size={20} />
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <h3 className={styles.title}>{project.title}</h3>
@@ -160,7 +166,7 @@ export default function Projects() {
                                     <span key={i}>{t}</span>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
 
@@ -176,7 +182,10 @@ export default function Projects() {
 
                 <div className={styles.grid}>
                     {otherProjects.map((project, index) => (
-                        <motion.div
+                        <motion.a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={index}
                             className={styles.card}
                             initial={{ opacity: 0, y: 20 }}
@@ -187,9 +196,9 @@ export default function Projects() {
                             <div className={styles.cardHeader}>
                                 <Folder className={styles.folderIcon} size={40} />
                                 <div className={styles.links}>
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                    <div className={styles.link}>
                                         <Github size={20} />
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <h3 className={styles.title}>{project.title}</h3>
@@ -199,7 +208,7 @@ export default function Projects() {
                                     <span key={i}>{t}</span>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
             </div>

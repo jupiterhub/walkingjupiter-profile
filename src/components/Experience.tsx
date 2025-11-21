@@ -240,17 +240,17 @@ export default function Experience() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
+                            onClick={() => toggleExpand(index)}
+                            role="button"
+                            tabIndex={0}
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                    toggleExpand(index);
+                                }
+                            }}
                         >
                             <div
                                 className={styles.header}
-                                onClick={() => toggleExpand(index)}
-                                role="button"
-                                tabIndex={0}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter' || e.key === ' ') {
-                                        toggleExpand(index);
-                                    }
-                                }}
                             >
                                 <h3 className={styles.role}>{exp.role}</h3>
                                 <div className={styles.company}>{exp.company}</div>
@@ -304,7 +304,13 @@ export default function Experience() {
                                                             <div className={styles.projectHeader}>
                                                                 <div className={styles.projectName}>
                                                                     {project.url ? (
-                                                                        <a href={project.url} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                                                                        <a
+                                                                            href={project.url}
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer"
+                                                                            className={styles.projectLink}
+                                                                            onClick={(e) => e.stopPropagation()}
+                                                                        >
                                                                             {project.name}
                                                                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                                                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
