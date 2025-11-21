@@ -13,26 +13,18 @@ export default function ContactForm() {
     });
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setStatus("loading");
 
-        try {
-            const res = await fetch("/api/contact", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
-            });
+        const subject = `Contact Form Submission from ${formData.name}`;
+        const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+        const mailtoLink = `mailto:profile@walkingjupiter.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-            if (res.ok) {
-                setStatus("success");
-                setFormData({ name: "", email: "", message: "" });
-            } else {
-                setStatus("error");
-            }
-        } catch (error) {
-            setStatus("error");
-        }
+        window.location.href = mailtoLink;
+
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
     };
 
     return (
