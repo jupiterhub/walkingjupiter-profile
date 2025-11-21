@@ -69,40 +69,42 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section id="experience" className={`container section ${styles.experience}`}>
-            <motion.h2
-                className="section-title"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-            >
-                Experience
-            </motion.h2>
+        <section id="experience" className={`${styles.experience} section`}>
+            <div className="container">
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                >
+                    Experience
+                </motion.h2>
 
-            <div className={styles.timeline}>
-                {experiences.map((exp, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.item}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <div className={styles.header}>
-                            <h3 className={styles.role}>{exp.role}</h3>
-                            <div className={styles.company}>{exp.company}</div>
-                            <div className={styles.period}>{exp.period}</div>
-                        </div>
-                        <div className={styles.description}>
-                            <ul>
-                                {exp.points.map((point, i) => (
-                                    <li key={i} dangerouslySetInnerHTML={{ __html: point }} />
-                                ))}
-                            </ul>
-                        </div>
-                    </motion.div>
-                ))}
+                <div className={styles.timeline}>
+                    {experiences.map((exp, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.item}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <div className={styles.header}>
+                                <h3 className={styles.role}>{exp.role}</h3>
+                                <div className={styles.company}>{exp.company}</div>
+                                <div className={styles.period}>{exp.period}</div>
+                            </div>
+                            <div className={styles.description}>
+                                <ul>
+                                    {exp.points.map((point, i) => (
+                                        <li key={i} dangerouslySetInnerHTML={{ __html: point }} />
+                                    ))}
+                                </ul>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );

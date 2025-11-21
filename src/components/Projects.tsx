@@ -85,121 +85,123 @@ const otherProjects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className={`container section`}>
-            <motion.h2
-                className="section-title"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-            >
-                Featured Projects
-            </motion.h2>
+        <section id="projects" className={`${styles.projects} section`}>
+            <div className="container">
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                >
+                    Featured Projects
+                </motion.h2>
 
-            <div className={styles.grid}>
-                {featuredProjects.map((project, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.card}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <div className={styles.cardHeader}>
-                            <Folder className={styles.folderIcon} size={40} />
-                            <div className={styles.links}>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                                    {project.isExternal ? <ExternalLink size={20} /> : <Github size={20} />}
-                                </a>
+                <div className={styles.grid}>
+                    {featuredProjects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.card}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <div className={styles.cardHeader}>
+                                <Folder className={styles.folderIcon} size={40} />
+                                <div className={styles.links}>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                        {project.isExternal ? <ExternalLink size={20} /> : <Github size={20} />}
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 className={styles.title}>{project.title}</h3>
-                        <p className={styles.description}>{project.description}</p>
-                        <div className={styles.techStack}>
-                            {project.tech.map((t, i) => (
-                                <span key={i}>{t}</span>
-                            ))}
-                        </div>
-                    </motion.div>
-                ))}
-            </div>
-
-            <motion.h2
-                className="section-title"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                style={{ marginTop: '4rem' }}
-            >
-                Open Source Contributions
-            </motion.h2>
-
-            <div className={styles.grid}>
-                {openSourceProjects.map((project, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.card}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <div className={styles.cardHeader}>
-                            <Folder className={styles.folderIcon} size={40} />
-                            <div className={styles.links}>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                                    <Github size={20} />
-                                </a>
+                            <h3 className={styles.title}>{project.title}</h3>
+                            <p className={styles.description}>{project.description}</p>
+                            <div className={styles.techStack}>
+                                {project.tech.map((t, i) => (
+                                    <span key={i}>{t}</span>
+                                ))}
                             </div>
-                        </div>
-                        <h3 className={styles.title}>{project.title}</h3>
-                        <p className={styles.description}>{project.description}</p>
-                        <div className={styles.techStack}>
-                            {project.tech.map((t, i) => (
-                                <span key={i}>{t}</span>
-                            ))}
-                        </div>
-                    </motion.div>
-                ))}
-            </div>
+                        </motion.div>
+                    ))}
+                </div>
 
-            <motion.h2
-                className="section-title"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                style={{ marginTop: '4rem' }}
-            >
-                Other Projects
-            </motion.h2>
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    style={{ marginTop: '4rem' }}
+                >
+                    Open Source Contributions
+                </motion.h2>
 
-            <div className={styles.grid}>
-                {otherProjects.map((project, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.card}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                    >
-                        <div className={styles.cardHeader}>
-                            <Folder className={styles.folderIcon} size={40} />
-                            <div className={styles.links}>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                                    <Github size={20} />
-                                </a>
+                <div className={styles.grid}>
+                    {openSourceProjects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.card}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <div className={styles.cardHeader}>
+                                <Folder className={styles.folderIcon} size={40} />
+                                <div className={styles.links}>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                        <Github size={20} />
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <h3 className={styles.title}>{project.title}</h3>
-                        <p className={styles.description}>{project.description}</p>
-                        <div className={styles.techStack}>
-                            {project.tech.map((t, i) => (
-                                <span key={i}>{t}</span>
-                            ))}
-                        </div>
-                    </motion.div>
-                ))}
+                            <h3 className={styles.title}>{project.title}</h3>
+                            <p className={styles.description}>{project.description}</p>
+                            <div className={styles.techStack}>
+                                {project.tech.map((t, i) => (
+                                    <span key={i}>{t}</span>
+                                ))}
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    style={{ marginTop: '4rem' }}
+                >
+                    Other Projects
+                </motion.h2>
+
+                <div className={styles.grid}>
+                    {otherProjects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.card}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <div className={styles.cardHeader}>
+                                <Folder className={styles.folderIcon} size={40} />
+                                <div className={styles.links}>
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                                        <Github size={20} />
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 className={styles.title}>{project.title}</h3>
+                            <p className={styles.description}>{project.description}</p>
+                            <div className={styles.techStack}>
+                                {project.tech.map((t, i) => (
+                                    <span key={i}>{t}</span>
+                                ))}
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );

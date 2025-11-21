@@ -1,3 +1,7 @@
+.projects {
+    background-color: rgba(11, 11, 21, 0.6);
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
