@@ -11,7 +11,7 @@ import InteractiveBackground from "@/components/InteractiveBackground";
 export default function Home() {
     return (
         <main>
-            <InteractiveBackground />
+            {/* <InteractiveBackground /> */}
             <Hero />
             <Skills />
             <Experience />
