@@ -1,126 +1,139 @@
+"use client";
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Skills.module.css';
 
 const skillCategories = [
     {
         title: "Languages",
         skills: [
-            { name: "Java", years: "16 years" },
-            { name: "Javascript", years: "15 years" },
-            { name: "React/TypeScript/Node", years: "6 years" },
-            { name: "Go", years: "1 year" },
-            { name: "Python (ML/AI)", years: "On and off" },
-            { name: "Scala (Gatling)", years: "Occasional" },
-            { name: "Kotlin (Gradle)", years: "Occasional" },
+            { name: "Java (Expert)" },
+            { name: "Golang (Current Focus)" },
+            { name: "TypeScript" },
+            { name: "JavaScript" },
+            { name: "SQL" },
+            { name: "Bash" }
         ]
     },
     {
-        title: "Process",
+        title: "Platform & Cloud",
         skills: [
-            { name: "Agile", years: "12 years" },
-            { name: "Scrum" },
-            { name: "XP" },
-            { name: "BDD" },
-            { name: "TDD" },
-            { name: "CI/CD" },
-            { name: "Static code analysis" },
-            { name: "Event Driven Architecture (Kafka/JMS - MQ)" },
-            { name: "CQRS" },
+            { name: "AWS (ECS, Fargate, Lambda)" },
+            { name: "Azure (AKS, Container Apps)" },
+            { name: "GCP (GKE)" },
+            { name: "Terraform" },
+            { name: "Docker" },
+            { name: "Kubernetes" }
         ]
     },
     {
-        title: "Frameworks/Libraries",
+        title: "Backend & Frameworks",
         skills: [
-            { name: "Spring Framework/Boot", years: "13 years" },
+            { name: "Spring Boot Ecosystem" },
             { name: "Micronaut" },
             { name: "Quarkus" },
-            { name: "jUnit" },
-            { name: "JPA/Hibernate" },
-            { name: "Kafka" },
-            { name: "Distributed Systems" },
-            { name: "Service mesh (Istio/Linkerd)" },
-            { name: "Rest" },
-            { name: "GraphQL" },
-            { name: "Sonar" },
-            { name: "Kubernetes" },
-            { name: "Helm" },
-            { name: "Kops" },
-            { name: "Docker" },
+            { name: "Node.js" },
+            { name: "Hibernate/JPA" }
         ]
     },
     {
-        title: "Cloud Computing",
+        title: "Architecture",
         skills: [
-            { name: "AWS (EC2/S3/Cloudwatch/SQS/ECS/Beanstalk/Lambda/RDS)" },
-            { name: "Azure (Container/AKS/Gateway)" },
-            { name: "GCP (GKE, App Engine)" },
-            { name: "Splunk" },
-            { name: "Newrelic" },
-            { name: "Runscope" },
-            { name: "Jaeger/Prometheus/Grafana" },
+            { name: "Event-Driven (Kafka, JMS)" },
+            { name: "CQRS" },
+            { name: "Microservices" },
+            { name: "Domain-Driven Design (DDD)" },
+            { name: "Internal Developer Platforms (IDP)" }
         ]
     },
     {
-        title: "Databases",
+        title: "DevOps & Tools",
         skills: [
-            { name: "SQL (Mysql, H2, Sybase, Oracle)" },
-            { name: "NoSQL MongoDB" },
-            { name: "Couchbase" },
-            { name: "In-Memory (Redis, Memcache)" },
-        ]
-    },
-    {
-        title: "Build Tools",
-        skills: [
-            { name: "Gradle" },
-            { name: "Maven" },
-            { name: "GoCD" },
-            { name: "Hudson" },
+            { name: "Azure DevOps" },
+            { name: "GitHub Actions" },
             { name: "Jenkins" },
-            { name: "Github Actions" },
-            { name: "Bitbucket" },
-            { name: "Azure Devops" },
+            { name: "Prometheus" },
+            { name: "Grafana" },
+            { name: "SonarQube" },
+            { name: "Istio" }
         ]
     },
     {
-        title: "Other",
+        title: "AI & R&D",
         skills: [
-            { name: "Agile methodologies" },
-            { name: "Design patterns" },
-        ]
-    },
-    {
-        title: "Emerging Technologies (Exposure/Interest)",
-        skills: [
-            { name: "LLM" },
-            { name: "Web3" },
-            { name: "AI/ML (local fine tuned model)" },
-            { name: "Spring Contributor" },
-            { name: "KEDA Contributor" },
-            { name: "NextAuth contributor" },
+            { name: "LLM Agents (LangChain)" },
+            { name: "Vector Embeddings" },
+            { name: "RAG" },
+            { name: "Prompt Engineering" }
         ]
     }
 ];
+
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+};
 
 const Skills = () => {
     return (
         <section className={`${styles.skills} section`} id="skills">
             <div className="container">
-                <h2 className="section-title">Skills & Expertise</h2>
+                <motion.h2
+                    className="section-title"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                >
+                    Skills & Expertise
+                </motion.h2>
 
-                {skillCategories.map((category, index) => (
-                    <div key={index} className={styles.category}>
-                        <h3 className={styles.categoryTitle}>{category.title}</h3>
-                        <div className={styles.skillList}>
-                            {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className={styles.skillItem}>
-                                    {skill.name}
-                                    {skill.years && <span className={styles.years}>({skill.years})</span>}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+                <div className={styles.grid}>
+                    {skillCategories.map((category, index) => (
+                        <motion.div
+                            key={index}
+                            className={styles.category}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                        >
+                            <h3 className={styles.categoryTitle}>{category.title}</h3>
+                            <motion.div
+                                className={styles.skillList}
+                                variants={container}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: true }}
+                            >
+                                {category.skills.map((skill, skillIndex) => (
+                                    <motion.div
+                                        key={skillIndex}
+                                        className={styles.skillItem}
+                                        variants={item}
+                                        whileHover={{
+                                            scale: 1.05,
+                                            boxShadow: "0 0 8px var(--primary)",
+                                            borderColor: "var(--primary)"
+                                        }}
+                                    >
+                                        {skill.name}
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
         </section>
     );

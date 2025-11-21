@@ -32,7 +32,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1.5rem' }}
                 >
-                    Staff Software Engineer.
+                    Staff Software Engineer | Technical Lead | Platform Architect
                 </motion.h2>
                 <motion.p
                     className={styles.description}
@@ -40,8 +40,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    Specializing in DevOps, Backend/Frontend, Cloud, and Distributed Systems.
-                    I build scalable, high-performance applications that solve real-world problems.
+                    "A Force Multiplier: From building core frameworks to scaling distributed systems."
                 </motion.p>
                 <motion.div
                     className={styles.ctaGroup}
@@ -49,9 +48,18 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <a href="#contact" className="btn btn-primary">
+                    <motion.a
+                        href="#contact"
+                        className="btn btn-primary"
+                        animate={{ scale: [1, 1.05, 1] }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                    >
                         Get in Touch <ArrowRight size={18} style={{ marginLeft: '8px' }} />
-                    </a>
+                    </motion.a>
                     <a href="#projects" className="btn btn-outline">
                         View Work
                     </a>

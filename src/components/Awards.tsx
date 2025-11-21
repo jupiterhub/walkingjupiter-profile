@@ -1,4 +1,7 @@
+"use client";
+
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Awards.module.css';
 import { Trophy, Star, Award } from 'lucide-react';
 
@@ -32,7 +35,15 @@ const Awards = () => {
 
                 <div className={styles.awardGrid}>
                     {awards.map((award, index) => (
-                        <div key={index} className={styles.awardCard}>
+                        <motion.div
+                            key={index}
+                            className={styles.awardCard}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            whileHover={{ y: -5 }}
+                        >
                             <div style={{ marginBottom: '1.5rem' }}>
                                 {award.icon}
                             </div>
@@ -56,7 +67,7 @@ const Awards = () => {
                                     View Credential →
                                 </a>
                             )}
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

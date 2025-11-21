@@ -13,24 +13,25 @@ export default function Home() {
         <main>
             <InteractiveBackground />
             <Hero />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Awards />
-            <Recommendations />
-            <Education />
-            <ContactForm />
-
-            <footer style={{
-                textAlign: 'center',
-                padding: '2rem',
-                color: '#666',
-                fontSize: '0.9rem',
-                borderTop: '1px solid var(--border)',
-                marginTop: '4rem'
-            }}>
-                <p>&copy; {new Date().getFullYear()} Jupiter Tecson. All rights reserved.</p>
-            </footer>
+            <div style={{ backgroundColor: 'rgba(11, 11, 21, 0.8)' }}>
+                <Skills />
+                <Experience />
+                <Projects />
+                <Awards />
+                <Recommendations />
+                <Education />
+                <ContactForm />
+                <footer style={{
+                    textAlign: 'center',
+                    padding: '2rem',
+                    color: '#fff',
+                    fontSize: '0.9rem',
+                    borderTop: '1px solid var(--border)',
+                    marginTop: '4rem'
+                }}>
+                    <p>&copy; {new Date().getFullYear()} Jupiter Tecson. All rights reserved.</p>
+                </footer>
+            </div>
         </main>
     );
 }

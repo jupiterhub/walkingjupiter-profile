@@ -6,22 +6,22 @@ import styles from "./Projects.module.css";
 
 const featuredProjects = [
     {
-        title: "Jupiter Goals",
-        description: "A goal tracking service to help you achieve your dreams. Built with modern web technologies.",
-        tech: ["Service", "Productivity", "Web App"],
+        title: "JupiterGoals (AI LifeOS)",
+        description: "An AI-powered 'Life Operating System' designed to help high-achievers manage goals. Features a Goal Decomposition Engine using LLMs.",
+        tech: ["Next.js", "LangChain", "OpenAI API", "Vector Database"],
         link: "https://www.jupitergoals.com/",
         isExternal: true
     },
     {
-        title: "Ready Set Marry",
-        description: "A wedding planning platform and information hub. Simplifying the journey to the altar.",
-        tech: ["Service", "Lifestyle", "React"],
+        title: "ReadySetMarry",
+        description: "A cloud-native wedding planning platform. Simplifying the journey to the altar.",
+        tech: ["React", "Node.js", "MongoDB", "Docker"],
         link: "https://www.readysetmarry.com/",
         isExternal: true
     },
     {
         title: "JupiterGoals Blog",
-        description: "Technical blog sharing insights on software engineering, distributed systems, and life.",
+        description: "Technical blog sharing insights on software engineering, distributed systems, and life. Built by an autonomous AI agent.",
         tech: ["Blog", "Content", "Tech"],
         link: "https://blog.jupitergoals.com/",
         isExternal: true
