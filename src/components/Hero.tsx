@@ -23,7 +23,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     style={{ fontSize: '4rem', fontWeight: 800, marginBottom: '0.5rem' }}
                 >
-                    Jupiter Tecson.
+                    Jupiter.
                 </motion.h1>
                 <motion.h2
                     className={styles.title}
@@ -32,7 +32,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1.5rem' }}
                 >
-                    Staff Software Engineer | Technical Lead | Platform Architect
+                    Staff Software Engineer | Technical Lead | Backend & Full Cycle Development
                 </motion.h2>
                 <motion.p
                     className={styles.description}

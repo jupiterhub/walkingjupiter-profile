@@ -4,69 +4,60 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Skills.module.css';
 
+import { formatYearsExperience, CAREER_START_DATE } from "@/utils/dateUtils";
+
 const skillCategories = [
     {
-        title: "Languages",
+        title: "Backend (Expert)",
         skills: [
-            { name: "Java (Expert)" },
-            { name: "Golang (Current Focus)" },
+            { name: `Java (16+ years)` },
+            { name: "Spring Boot" },
+            { name: "Micronaut" },
+            { name: "Microservices" },
+            { name: "Event-Driven Architecture (Kafka)" },
+            { name: "CQRS" },
+            { name: "SQL (PostgreSQL/MySQL)" },
+            { name: "System Design" }
+        ]
+    },
+    {
+        title: "Platform Languages",
+        skills: [
+            { name: "Golang (Cloud/K8s/Azure SDKs)" },
+            { name: "HCL (Terraform)" },
+            { name: "Shell (Bash/Zsh)" }
+        ]
+    },
+    {
+        title: "Frontend (Proficient)",
+        skills: [
             { name: "TypeScript" },
             { name: "JavaScript" },
-            { name: "SQL" },
-            { name: "Bash" }
+            { name: "React" },
+            { name: "GraphQL" },
+            { name: "SPA Architecture" },
+            { name: "Next.js" }
         ]
     },
     {
-        title: "Platform & Cloud",
+        title: "Platform & Infra",
         skills: [
-            { name: "AWS (ECS, Fargate, Lambda)" },
-            { name: "Azure (AKS, Container Apps)" },
-            { name: "GCP (GKE)" },
+            { name: "AWS (ECS/Fargate)" },
+            { name: "Azure (AKS)" },
+            { name: "Kubernetes" },
             { name: "Terraform" },
             { name: "Docker" },
-            { name: "Kubernetes" }
+            { name: "CI/CD Strategy (Azure DevOps)" }
         ]
     },
     {
-        title: "Backend & Frameworks",
+        title: "Emerging Tech",
         skills: [
-            { name: "Spring Boot Ecosystem" },
-            { name: "Micronaut" },
-            { name: "Quarkus" },
-            { name: "Node.js" },
-            { name: "Hibernate/JPA" }
-        ]
-    },
-    {
-        title: "Architecture",
-        skills: [
-            { name: "Event-Driven (Kafka, JMS)" },
-            { name: "CQRS" },
-            { name: "Microservices" },
-            { name: "Domain-Driven Design (DDD)" },
-            { name: "Internal Developer Platforms (IDP)" }
-        ]
-    },
-    {
-        title: "DevOps & Tools",
-        skills: [
-            { name: "Azure DevOps" },
-            { name: "GitHub Actions" },
-            { name: "Jenkins" },
-            { name: "Prometheus" },
-            { name: "Grafana" },
-            { name: "SonarQube" },
-            { name: "Istio" }
-        ]
-    },
-    {
-        title: "AI & R&D",
-        skills: [
-            { name: "LLM Agents (LangChain)" },
-            { name: "Vector Embeddings" },
-            { name: "Goal Decomposition Models" },
+            { name: "vLLM" },
             { name: "RAG" },
-            { name: "Prompt Engineering" }
+            { name: "Vector Embeddings" },
+            { name: "Model Fine Tuning" },
+            { name: "AI Agents (R&D focus)" }
         ]
     }
 ];

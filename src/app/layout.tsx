@@ -7,8 +7,8 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Jupiter Tecson | Staff Software Engineer",
-    description: "Portfolio of Jupiter Tecson, a Staff Software Engineer specializing in Platform Engineering, Internal Developer Platforms (IDP), Distributed Systems, and AI Agents.",
+    title: "Jupiter | Staff Software Engineer",
+    description: "Portfolio of Jupiter, a Staff Software Engineer specializing in Platform Engineering, Internal Developer Platforms (IDP), Distributed Systems, and AI Agents.",
 };
 
 export default function RootLayout({

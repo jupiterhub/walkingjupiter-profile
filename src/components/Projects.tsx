@@ -7,22 +7,22 @@ import styles from "./Projects.module.css";
 const featuredProjects = [
     {
         title: "JupiterGoals (AI LifeOS)",
-        description: "An AI-powered 'Life Operating System' designed to help high-achievers manage goals. Features a Goal Decomposition Engine using LLMs.",
-        tech: ["Next.js", "LangChain", "OpenAI API", "Vector Database"],
+        description: "Founder and Architect. An AI-powered 'Life Operating System' designed to help high-achievers manage goals. Features a Goal Decomposition Engine using LLMs.",
+        tech: ["Next.js", "LangChain", "OpenAI API", "Vector Database", "AI Agents"],
         link: "https://www.jupitergoals.com/",
         isExternal: true
     },
     {
         title: "ReadySetMarry",
-        description: "A cloud-native wedding planning platform. Simplifying the journey to the altar.",
-        tech: ["React", "Node.js", "MongoDB", "Docker"],
+        description: "Founder and Architect. A cloud-native wedding planning platform built on React and Node.js. Simplifying the journey to the altar.",
+        tech: ["React", "Next.js", "Firebase", "Docker"],
         link: "https://www.readysetmarry.com/",
         isExternal: true
     },
     {
         title: "JupiterGoals Blog",
         description: "Technical blog sharing insights on software engineering, distributed systems, and life. Built by an autonomous AI agent.",
-        tech: ["Blog", "Content", "Tech"],
+        tech: ["Blog", "Content", "Tech", "AI Agents", "Hugo"],
         link: "https://blog.jupitergoals.com/",
         isExternal: true
     }
@@ -37,17 +37,17 @@ const openSourceProjects = [
         isExternal: false
     },
     {
+        title: "KEDA",
+        description: "Contributor to KEDA (Kubernetes Event-driven Autoscaling).",
+        tech: ["Open Source", "Kubernetes", "Autoscaling"],
+        link: "https://keda.sh/",
+        isExternal: false
+    },
+    {
         title: "NextAuth.js",
         description: "Contributor to NextAuth.js, the complete open-source authentication solution for Next.js applications.",
         tech: ["Open Source", "Next.js", "Auth"],
         link: "https://github.com/nextauthjs/next-auth",
-        isExternal: false
-    },
-    {
-        title: "KEDA Docs",
-        description: "Contributor to KEDA (Kubernetes Event-driven Autoscaling) documentation.",
-        tech: ["Open Source", "Kubernetes", "Docs"],
-        link: "https://github.com/kedacore/keda-docs",
         isExternal: false
     }
 ];

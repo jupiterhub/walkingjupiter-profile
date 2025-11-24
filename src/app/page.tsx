@@ -32,7 +32,7 @@ export default function Home() {
                     borderTop: '1px solid var(--border)',
                     marginTop: '4rem'
                 }}>
-                    <p>&copy; {new Date().getFullYear()} Jupiter Tecson. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Jupiter. All rights reserved.</p>
                 </footer>
             </div>
         </main>

@@ -1,6 +1,6 @@
 # **Jupiter Tecson \- Portfolio Data Source**
 
-Role: Staff Software Engineer | Technical Lead | Platform Architect  
+Role: Staff Software Engineer | Technical Lead
 Tagline: "A Force Multiplier: From building core frameworks to scaling distributed systems."
 
 ## **🛠 Global Tech Stack & Capabilities**

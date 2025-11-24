@@ -41,19 +41,24 @@ const experiences: ExperienceItem[] = [
         ],
         starExamples: [
             {
-                principle: "Customer Obsession & Invent and Simplify",
-                situation: "Engineers were overwhelmed by cloud complexity; onboarding took days.",
-                result: "Built an IDP (Internal Developer Platform) that simplified infrastructure provisioning, drastically reducing onboarding time."
+                principle: "Cloud Cost Optimization",
+                situation: "Identified inefficiencies in backend resource usage.",
+                result: "Executed a migration strategy (AWS to Azure) that delivered <strong>£440,000 annual savings</strong>."
             },
             {
-                principle: "Frugality & Ownership",
-                situation: "Identified escalating infrastructure costs due to inefficient cloud resource usage.",
-                result: "Led a migration and optimization initiative that reduced annual costs by £440k while improving system stability."
+                principle: "Event-Driven Architecture",
+                situation: "Need for real-time collaborative ordering.",
+                result: "Drove the technical initiative using <strong>Kafka</strong>, ensuring instant synchronization across user devices."
             },
             {
-                principle: "Insist on Highest Standards",
-                situation: "Deployments were manual, error-prone, and slow.",
-                result: "Designed and implemented a robust CI/CD pipeline, streamlining releases and reducing deployment failures."
+                principle: "Technical Modernization",
+                situation: "High-traffic backend services needed throughput improvement.",
+                result: "Spearheaded the adoption of <strong>Java 21</strong> and Virtual Threads."
+            },
+            {
+                principle: "Infrastructure",
+                situation: "Release timings were slow due to manual processes.",
+                result: "Led the implementation of \"Pipeline-as-Code,\" standardizing CI/CD templates that reduced release timings by <strong>25%</strong>."
             }
         ]
     },
@@ -86,7 +91,7 @@ const experiences: ExperienceItem[] = [
         company: "Global Travel",
         period: "May 2016 - Oct 2017",
         points: [
-            "Global travel across Asia and Europe (Nepal, Vietnam, India, etc.)."
+            "Embarked on a global journey, experiencing diverse cultures and expanding personal horizons before relocating to Japan."
         ]
     },
     {
@@ -144,7 +149,7 @@ const experiences: ExperienceItem[] = [
         ]
     },
     {
-        role: "Team Lead / Senior Java Programmer",
+        role: "Team Lead / Java Programmer",
         company: "ST. LUKE’S MEDICAL CENTER, Philippines",
         period: "May 2009 - Feb 2011",
         points: [
