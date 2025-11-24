@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin, Terminal, CloudCog } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -32,19 +32,25 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1.5rem' }}
                 >
-                    Staff Software Engineer | Technical Lead | Backend & Full Cycle Development
+                    Staff Software Engineer | Technical Lead
                 </motion.h2>
+                <MapPin size={14} /> London, UK
                 <motion.p
                     className={styles.description}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    "A Force Multiplier: From building core frameworks to scaling distributed systems."
+
+                    <br />
+                    Architecting scalable backend systems for E-commerce, AdTech, and Healthcare sectors.
+                    Specializing in Cloud Modernization, Java Ecosystems, and Engineering Strategy.
+                    Currently delivering infrastructure impact at Tesco.
                 </motion.p>
+
                 <motion.div
                     className={styles.ctaGroup}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0.5, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >

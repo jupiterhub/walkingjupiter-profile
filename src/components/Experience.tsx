@@ -33,56 +33,47 @@ const experiences: ExperienceItem[] = [
         company: "TESCO, London",
         period: "May 2023 - Present",
         points: [
-            "Building the 'Golden Path' for thousands of Tesco engineers via an Internal Developer Platform (IDP).",
-            "Reduced infrastructure costs by <strong>£440,000 annually</strong> through cloud migration and optimization strategies.",
-            "Spearheaded CI/CD pipeline design and implementation enabling streamlined, stable deployments.",
-            "Leading initiative to support group ordering and enabling real-time functionalities via event-driven architecture.",
-            "Mentored engineers and promoted cross-collaboration across teams."
+            "Delivering Staff-level impact within the Platform Engineering and Recommendations domains."
         ],
-        starExamples: [
+        projects: [
+            // {
+            //     name: "Current Project: Tesco Developer Platform (TDP)",
+            //     description: [
+            //         "<strong>Platform Engineering:</strong> Building a secure, multi-tenant Developer Platform. Adopting <strong>Golang</strong> to create CLI tools and Kubernetes components that standardize infrastructure provisioning.",
+            //         "<strong>DevOps Integration:</strong> Architected robust integrations with <strong>Azure DevOps</strong>, enabling application teams to generate compliant CI/CD pipelines automatically via <strong>Terraform</strong>.",
+            //         "<strong>Developer Experience (DevX):</strong> Championed the UX of the platform by leading design discussions and creating high-impact technical demos that successfully aligned stakeholders and drove internal adoption."
+            //     ],
+            //     technologies: ["Golang", "Kubernetes", "Azure DevOps", "Terraform", "Backstage"]
+            // },
             {
-                principle: "Cloud Cost Optimization",
-                situation: "Identified inefficiencies in backend resource usage.",
-                result: "Executed a migration strategy (AWS to Azure) that delivered <strong>£440,000 annual savings</strong>."
-            },
-            {
-                principle: "Event-Driven Architecture",
-                situation: "Need for real-time collaborative ordering.",
-                result: "Drove the technical initiative using <strong>Kafka</strong>, ensuring instant synchronization across user devices."
-            },
-            {
-                principle: "Technical Modernization",
-                situation: "High-traffic backend services needed throughput improvement.",
-                result: "Spearheaded the adoption of <strong>Java 21</strong> and Virtual Threads."
-            },
-            {
-                principle: "Infrastructure",
-                situation: "Release timings were slow due to manual processes.",
-                result: "Led the implementation of \"Pipeline-as-Code,\" standardizing CI/CD templates that reduced release timings by <strong>25%</strong>."
+                name: "Previous Project: Recommendations, Substitutions & Lists",
+                description: [
+                    "<strong>Cloud Cost Optimization:</strong> Identified inefficiencies in backend resource usage and executed a migration strategy (AWS to Azure) that delivered <strong>£440,000 annual savings</strong>.",
+                    "<strong>Event-Driven Architecture:</strong> Drove the technical initiative to enable real-time collaborative ordering using <strong>Kafka</strong>, ensuring instant synchronization across user devices.",
+                    "<strong>Technical Modernization:</strong> Spearheaded the adoption of <strong>Java 21</strong> and Virtual Threads to improve the throughput of high-traffic backend services.",
+                    "<strong>Infrastructure:</strong> Led the implementation of 'Pipeline-as-Code,' standardizing CI/CD templates that reduced release timings by <strong>25%</strong>."
+                ],
+                technologies: ["Java 21", "Kafka", "Azure", "Micronaut", "Redis"]
             }
         ]
     },
     {
-        role: "Technical Lead",
+        role: "Technical Lead (Staff Equivalent)",
         company: "APERZA INC., Japan",
         period: "Nov 2017 - Oct 2022",
         points: [
-            "Led full-stack development of 2 customer-facing greenfield applications.",
-            "Spearheaded the development of a new E-commerce platform and Aperza TV.",
-            "Implemented CI/CD pipelines, reducing deployment time by <strong>over 95%</strong>.",
-            "Migrated infrastructure from EC2 to ECS, saving <strong>£24,000 annually</strong>.",
-            "Led and mentored a team of 5 software engineers."
+            "Led End-to-End (Full Stack) development through multiple strategic product pivots."
         ],
-        starExamples: [
+        projects: [
             {
-                principle: "Frugality & Bias for Action",
-                situation: "Legacy EC2 infrastructure was costly and difficult to scale.",
-                result: "Migrated to ECS Fargate with Spot Instances, saving £24k annually and enabling auto-scaling."
-            },
-            {
-                principle: "Insist on Highest Standards",
-                situation: "Deployments took 4 hours of manual effort.",
-                result: "Implemented 'Click Button Deployment' via CI/CD, slashing deployment time to 15 minutes."
+                name: "Product Evolution & Modernization",
+                description: [
+                    "<strong>Product Evolution:</strong> Architected the backend (<strong>Java</strong>) and frontend (<strong>React/TS</strong>) for three distinct business phases: (1) E-commerce Marketplace, (2) Vertical SaaS (CRM), and (3) Aperza TV (Streaming).",
+                    "<strong>Frontend Modernization:</strong> Led the transition from legacy server-side rendering to modern Single Page Applications (SPA), establishing frontend coding standards and component libraries.",
+                    "<strong>Infrastructure Migration:</strong> Migrated legacy infrastructure to <strong>AWS ECS (Fargate)</strong>, improving scalability and reducing costs by <strong>£24,000 annually</strong>.",
+                    "<strong>DevOps Transformation:</strong> Designed the company’s first automated CI/CD pipelines, reducing release cycles from <strong>4 hours to 15 minutes</strong>."
+                ],
+                technologies: ["Java", "React", "TypeScript", "AWS ECS", "Docker", "CircleCI"]
             }
         ]
     },
@@ -340,7 +331,8 @@ export default function Experience() {
                                                             <div className={styles.projectDescription}>
                                                                 <ul>
                                                                     {project.description.map((desc, dIndex) => (
-                                                                        <li key={dIndex}>{desc}</li>
+                                                                        // Updated to use dangerouslySetInnerHTML to support bold tags in project descriptions
+                                                                        <li key={dIndex} dangerouslySetInnerHTML={{ __html: desc }} />
                                                                     ))}
                                                                 </ul>
                                                             </div>
