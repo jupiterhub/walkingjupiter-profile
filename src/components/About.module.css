@@ -1,0 +1,31 @@
+.about {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(11, 11, 21, 0.8);
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.summary {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.summary:last-child {
+    margin-bottom: 0;
+}
+
+.summary strong {
+    color: var(--primary);
+    font-weight: 600;
+}

@@ -1,7 +1,9 @@
 import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
+
 import Awards from "@/components/Awards";
 import Recommendations from "@/components/Recommendations";
 import Education from "@/components/Education";
@@ -14,6 +16,7 @@ export default function Home() {
             <InteractiveBackground />
             <Hero />
             <div style={{ backgroundColor: 'rgba(11, 11, 21, 0.8)' }}>
+                <About />
                 <Skills />
                 <Experience />
                 <Projects />

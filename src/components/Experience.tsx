@@ -82,6 +82,14 @@ const experiences: ExperienceItem[] = [
         ]
     },
     {
+        role: "Sabbatical",
+        company: "Global Travel",
+        period: "May 2016 - Oct 2017",
+        points: [
+            "Global travel across Asia and Europe (Nepal, Vietnam, India, etc.)."
+        ]
+    },
+    {
         role: "Technical Lead",
         company: "RAKUTEN ASIA, Singapore",
         period: "May 2013 - Apr 2016",

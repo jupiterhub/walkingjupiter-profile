@@ -64,6 +64,7 @@ const skillCategories = [
         skills: [
             { name: "LLM Agents (LangChain)" },
             { name: "Vector Embeddings" },
+            { name: "Goal Decomposition Models" },
             { name: "RAG" },
             { name: "Prompt Engineering" }
         ]
