@@ -78,7 +78,7 @@ Context: B2B Manufacturing Marketplace (Series B Startup)
 #### **🔹 Project 2: DevOps Culture Transformation**
 
 * **Description:** Moving the engineering team from manual deployments to full CI/CD automation.  
-* **Core Tech:** CircleCI GitHub Actions Shell Scripting SonarQube
+* **Core Tech:** GoCD GitHub Actions Shell Scripting SonarQube
 
 **🏆 Leadership Challenge: Insist on Highest Standards**
 

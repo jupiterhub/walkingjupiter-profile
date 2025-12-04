@@ -73,7 +73,7 @@ const experiences: ExperienceItem[] = [
                     "<strong>Infrastructure Migration:</strong> Migrated legacy infrastructure to <strong>AWS ECS (Fargate)</strong>, improving scalability and reducing costs by <strong>£24,000 annually</strong>.",
                     "<strong>DevOps Transformation:</strong> Designed the company’s first automated CI/CD pipelines, reducing release cycles from <strong>4 hours to 15 minutes</strong>."
                 ],
-                technologies: ["Java", "React", "TypeScript", "AWS ECS", "Docker", "CircleCI"]
+                technologies: ["Java", "React", "TypeScript", "AWS ECS", "Docker", "GoCD"]
             },
             {
                 name: "Technical Blog: Continuous Delivery at Aperza",
@@ -81,7 +81,7 @@ const experiences: ExperienceItem[] = [
                 description: [
                     "Authored a technical deep-dive on our journey to Continuous Delivery, detailing how we reduced deployment times from 4 hours to 15 minutes."
                 ],
-                technologies: ["CI/CD", "CircleCI", "Docker", "Technical Writing"]
+                technologies: ["CI/CD", "GoCD", "Docker", "Technical Writing"]
             }
         ]
     },
