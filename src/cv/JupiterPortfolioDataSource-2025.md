@@ -89,7 +89,9 @@ Context: B2B Manufacturing Marketplace (Series B Startup)
 #### **🔹 Project 3: Aperza TV & Vertical SaaS**
 
 * **Description:** Greenfield development of a video streaming service for manufacturing trade shows and a specialized CRM for industry marketing.  
-* **Core Tech:** Java Spring Boot Vue.js AWS MediaConvert Elasticsearch
+* **Core Tech:** Java, Spring Boot, React, Node
+* **Description:** Authored a technical deep-dive on our journey to Continuous Delivery, detailing how we reduced deployment times from 4 hours to 15 minutes. [https://tech.aperza.com/continous-delivery/](https://tech.aperza.com/continous-delivery/)
+
 
 ### **🏢 RAKUTEN ASIA**
 

@@ -58,7 +58,7 @@ const experiences: ExperienceItem[] = [
         ]
     },
     {
-        role: "Technical Lead (Staff Equivalent)",
+        role: "Technical Lead",
         company: "APERZA INC., Japan",
         period: "Nov 2017 - Oct 2022",
         points: [
@@ -74,6 +74,14 @@ const experiences: ExperienceItem[] = [
                     "<strong>DevOps Transformation:</strong> Designed the company’s first automated CI/CD pipelines, reducing release cycles from <strong>4 hours to 15 minutes</strong>."
                 ],
                 technologies: ["Java", "React", "TypeScript", "AWS ECS", "Docker", "CircleCI"]
+            },
+            {
+                name: "Technical Blog: Continuous Delivery at Aperza",
+                url: "https://tech.aperza.com/continous-delivery/",
+                description: [
+                    "Authored a technical deep-dive on our journey to Continuous Delivery, detailing how we reduced deployment times from 4 hours to 15 minutes."
+                ],
+                technologies: ["CI/CD", "CircleCI", "Docker", "Technical Writing"]
             }
         ]
     },
