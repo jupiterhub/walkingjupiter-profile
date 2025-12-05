@@ -48,12 +48,13 @@ const experiences: ExperienceItem[] = [
             {
                 name: "Previous Project: Recommendations, Substitutions & Lists",
                 description: [
+                    "<strong>Personalized Substitutions:</strong> Increased sales uplift of basket adds by over <strong>£2 million</strong> through the implementation of personalized substitution recommendations.",
                     "<strong>Cloud Cost Optimization:</strong> Identified inefficiencies in backend resource usage and executed a migration strategy (AWS to Azure) that delivered <strong>£440,000 annual savings</strong>.",
                     "<strong>Event-Driven Architecture:</strong> Drove the technical initiative to enable real-time collaborative ordering using <strong>Kafka</strong>, ensuring instant synchronization across user devices.",
                     "<strong>Technical Modernization:</strong> Spearheaded the adoption of <strong>Java 21</strong> and Virtual Threads to improve the throughput of high-traffic backend services.",
                     "<strong>Infrastructure:</strong> Led the implementation of 'Pipeline-as-Code,' standardizing CI/CD templates that reduced release timings by <strong>25%</strong>."
                 ],
-                technologies: ["Java 21", "Kafka", "Azure", "Micronaut", "Redis"]
+                technologies: ["Java 18/21", "Kafka", "Azure", "Micronaut", "Redis", "Couchbase"]
             }
         ]
     },
@@ -81,7 +82,7 @@ const experiences: ExperienceItem[] = [
                 description: [
                     "Authored a technical deep-dive on our journey to Continuous Delivery, detailing how we reduced deployment times from 4 hours to 15 minutes."
                 ],
-                technologies: ["CI/CD", "GoCD", "Docker", "Technical Writing"]
+                technologies: ["CI/CD", "GoCD", "Automated Testing", "Technical Writing"]
             }
         ]
     },
@@ -110,7 +111,7 @@ const experiences: ExperienceItem[] = [
                     "Developed a Global Advertising platform for the Rakuten group.",
                     "Implemented Agile practices (CI, Scrum, XP), increasing velocity by 30%."
                 ],
-                technologies: ["Java", "Spring", "Gradle", "Flyway", "MySQL", "Big Data ETL"]
+                technologies: ["Java", "Spring", "Gradle", "Flyway", "MySQL", "ETL"]
             }
         ],
         starExamples: [
@@ -126,8 +127,8 @@ const experiences: ExperienceItem[] = [
         company: "NCS PTE LTD, Singapore",
         period: "Mar 2011 - Apr 2013",
         points: [
-            "Developed Admin tools for John Wiley & Sons.",
-            "Led API development for Standard Chartered's Straight2Bank platform."
+            "Developed Admin tools for John Wiley & Sons' online library (onlinelibrary.wiley.com).",
+            "Led API development for Standard Chartered's Straight2Bank mobile app."
         ],
         projects: [
             {
@@ -136,14 +137,14 @@ const experiences: ExperienceItem[] = [
                     "Mobile Trade Finance module allowing corporate clients to approve transactions on the go.",
                     "Optimized API payloads to improve efficiency by 15%."
                 ],
-                technologies: ["Java EE", "Web Services (SOAP)", "Mobile Web Optimization"]
+                technologies: ["Java EE", "Web Services (SOAP)", "Mobile Web Optimization", "REST"]
             },
             {
                 name: "John Wiley & Sons 'Access Control'",
                 description: [
                     "Administrative tools for library provisioning and analytics."
                 ],
-                technologies: ["Java", "SiteCatalyst", "Google Analytics API"]
+                technologies: ["Java", "SiteCatalyst", "MarkLogic"]
             }
         ]
     },
