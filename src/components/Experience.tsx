@@ -201,7 +201,7 @@ const experiences: ExperienceItem[] = [
         company: "PROV INTERNATIONAL, Philippines",
         period: "Jan 2008 - Apr 2009",
         points: [
-            "Appointed as one of the 5 tech leads for modularizing the Legacy Project.",
+            "Appointed as one of the 5 team leads for modularizing the Legacy Project.",
             "Provided core processes/frameworks to promote code-reuse."
         ],
         projects: [
