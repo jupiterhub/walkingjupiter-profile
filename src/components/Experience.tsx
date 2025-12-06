@@ -54,7 +54,7 @@ const experiences: ExperienceItem[] = [
                     "<strong>Technical Modernization:</strong> Spearheaded the adoption of <strong>Java 21</strong> and Virtual Threads to improve the throughput of high-traffic backend services.",
                     "<strong>Infrastructure:</strong> Led the implementation of 'Pipeline-as-Code,' standardizing CI/CD templates that reduced release timings by <strong>25%</strong>."
                 ],
-                technologies: ["Java 18/21", "Kafka", "Azure", "Micronaut", "Redis", "Couchbase"]
+                technologies: ["Java 18/21", "Kafka", "Azure", "AWS", "Spring boot", "Micronaut", "Redis", "Couchbase"]
             }
         ]
     },
