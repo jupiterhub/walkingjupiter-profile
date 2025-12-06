@@ -32,7 +32,7 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ fontSize: '2rem', color: 'var(--primary)', marginBottom: '1.5rem' }}
                 >
-                    Staff Software Engineer | Technical Lead
+                    Staff Software Engineer | Distributed Systems, Cloud Architecture & AI Platform
                 </motion.h2>
                 <MapPin size={14} /> London, UK
                 <motion.p
