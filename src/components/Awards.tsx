@@ -24,6 +24,13 @@ const awards = [
         description: "Validated expertise in Java programming language and its core libraries.",
         link: "https://www.credly.com/badges/282673c0-9c98-404b-8afa-43003ee7b38f/linked_in_profile",
         icon: <Award size={32} color="var(--accent)" />
+    },
+    {
+        title: "Google Cloud Certified Professional ML Engineer",
+        subtitle: "In Progress - Targeting Q1 2026",
+        description: "Currently pursuing certification to validate expertise in architecting and deploying machine learning models on Google Cloud.",
+        link: "https://cloud.google.com/learn/certification/machine-learning-engineer",
+        icon: <Award size={32} color="var(--accent)" />
     }
 ];
 
